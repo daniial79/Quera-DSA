@@ -4,7 +4,7 @@ def linear_search(array, target):
             - an array of n elements
             - the element to search for
 
-        output:
+        Output:
             - index of target if found, or -1 if not found
 
         Time Complexity: O(n)
