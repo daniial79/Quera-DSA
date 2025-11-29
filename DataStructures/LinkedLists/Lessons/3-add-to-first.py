@@ -63,5 +63,5 @@ def addFirst(self, value):
         newNode.next = self.head
         self.head = newNode
 
-    self.size += 1   # (Corrected from 'size += 1')
+    self.size += 1  
 
