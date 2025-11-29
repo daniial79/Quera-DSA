@@ -37,14 +37,44 @@ def addFirst(self, value):
     self.size += 1 
     
 def addLast(self, value):
+    """
+    Input:
+        - value: the data to be stored in the new node added
+                 at the end of the linked list
+
+    Output:
+        - void (updates the linked list by inserting a new node at the tail)
+
+    Description:
+        The addLast method appends a new node containing the given value
+        to the end of the linked list.
+
+        Process:
+            - Create a new Node with the provided value.
+            - If the list is empty (tail is None):
+                - Set both head and tail to the new node.
+            - Otherwise:
+                - Set the current tail's 'next' reference to the new node.
+                - Update the tail so that it becomes the new node.
+            - Increase the size of the list by 1.
+
+        This method allows efficient insertion at the end of the list
+        since the LinkedList maintains a reference to its tail.
+
+    Time Complexity:
+        - O(1), appending at the tail does not require traversal
+
+    Space Complexity:
+        - O(1), only one new node reference is created
+    """
     newNode = Node(value)
-    
+
     if self.tail is None:
         self.head = newNode
         self.tail = newNode
     else:
         self.tail.next = newNode
         self.tail = newNode
-        
+
     self.size += 1
 
