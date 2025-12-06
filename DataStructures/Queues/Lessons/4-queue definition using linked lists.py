@@ -29,6 +29,7 @@ class Node:
         """
         self.data = data
         self.next = None
+        self.prev = None
 
         
 class Queue:
