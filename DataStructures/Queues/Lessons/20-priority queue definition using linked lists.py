@@ -106,5 +106,3 @@ class PriorityQueue:
         self.head = None 
         self.tail = None 
         self.size = 0
-    
-    
